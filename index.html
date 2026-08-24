@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Crop Recommendation</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌱 AI Crop Recommendation System</h1>
+
+        <p>
+            Enter soil conditions based on your soil test report and get the best crop recommendation for your farm.
+        </p>
+
+
+        <div class="form-container">
+
+            <label>Nitrogen (N)</label>
+            <input type="number"
+                   id="N"
+                   placeholder="Enter Nitrogen">
+
+
+            <label>Phosphorus (P)</label>
+            <input type="number"
+                   id="P"
+                   placeholder="Enter Phosphorus">
+
+
+            <label>Potassium (K)</label>
+            <input type="number"
+                   id="K"
+                   placeholder="Enter Potassium">
+
+
+            <label>Temperature</label>
+            <input type="number"
+                   id="temperature"
+                   step="0.01"
+                   placeholder="Enter Temperature">
+
+
+            <label>Humidity</label>
+            <input type="number"
+                   id="humidity"
+                   step="0.01"
+                   placeholder="Enter Humidity">
+
+
+            <label>pH</label>
+            <input type="number"
+                   id="ph"
+                   step="0.01"
+                   placeholder="Enter pH">
+
+
+            <label>Rainfall</label>
+            <input type="number"
+                   id="rainfall"
+                   step="0.01"
+                   placeholder="Enter Rainfall">
+
+
+            <button onclick="predictCrop()">
+                Recommend Crop
+            </button>
+
+        </div>
+
+
+        <div id="result"
+             class="result">
+
+        </div>
+
+
+        <hr>
+
+
+        <h1>🤖 AI Agriculture Assistant</h1>
+
+        <div id="chat-box"
+             class="chat-box">
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input type="text"
+                   id="user-message"
+                   placeholder="Ask about crops, soil, NPK...">
+
+            <button onclick="sendMessage()">
+                Ask AI
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
